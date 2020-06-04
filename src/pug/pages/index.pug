@@ -1,6 +1,143 @@
 extends  ../template/base
 block variables
-    -var title = "Travel"
+	-var title = "Travel"
 
 block content
-    .container
+	section.blog
+		h2.visual-hidden Blog
+		p.blog__title Travel Blog
+		p.blog__tag.blog__tag-template Blog template
+	section.header-slider
+		.slider
+			.slide
+				p.blog__tag.blog__tag-lifestyle Lifestyle
+				h1.slide__title Beyond The Land
+			.slide
+				p.blog__tag.blog__tag-lifestyle Lifestyle
+				h1.slide__title Beyond The Land
+			.slide
+				p.blog__tag.blog__tag-lifestyle Lifestyle
+				h1.slide__title Beyond The Land
+	section.content.wrap
+		.conten__filter
+			ul.content__list
+				li
+					a.content__link(href="#") Most Recent
+				li
+					a.content__link(href="#") Popular Post
+			a.content__link(href="#") All Post <i class="fa fa-angle-down" aria-hidden="true"></i>
+		hr
+		.main-block
+			h2.visual-hidden Content block
+			.card
+				.card__img
+					img(src="/images/posts/post1.jpg" alt="Post 1")
+				.card__content
+					p.blog__tag.blog__tag-template Lifestyle
+					h2.card__title End of the Ocean
+					p.card__text
+						| Ted fermentum sed felis ut eleifend. Integer
+						| laoreet massa sed leo rhoncus, non posuere eros varius.
+						| Sed congue ligula leo, in molestie mauris viverra quis. Ut a dui a lectus molestie pulvinar
+						| id non magna. Nam blandit dictum ante id venenatis.
+					a.card__link(href="#") Read More <i class="fa fa-angle-right" aria-hidden="true"></i>
+
+			.card
+				.card__img
+					img(src="/images/posts/post2.jpg" alt="Post 2")
+				.card__content
+					p.blog__tag.blog__tag-template Travel
+					h2.card__title Land Of Mysteries
+					p.card__text
+						| Ted fermentum sed felis ut eleifend. Integer laoreet massa sed leo rhoncus, non posuere eros varius.
+						| Sed congue ligula leo, in molestie mauris viverra quis. Ut a dui a lectus molestie pulvinar id non magna.
+						| Nam blandit dictum ante id venenatis.
+						| Morbi tristique et neque in viverra. Aenean cursus gravida nulla, sit amet suscipit lectus hendrerit eu.
+					a.card__link(href="#") Read More <i class="fa fa-angle-right" aria-hidden="true"></i>
+
+			.card
+				.card__img
+					img(src="/images/posts/post3.jpg" alt="Post 3")
+				.card__content
+					p.blog__tag.blog__tag-template Photography
+					h2.card__title Life Advice Looking Through A Window
+					p.card__text
+						| Ted fermentum sed felis ut eleifend. Integer laoreet massa sed leo rhoncus, non posuere eros varius.
+						| Sed congue ligula leo, in molestie mauris viverra quis. Ut a dui a lectus molestie pulvinar id non magna.
+						| Nam blandit dictum ante id venenatis. Morbi tristique et neque in viverra.
+						| Aenean cursus gravida nulla, sit amet suscipit lectus hendrerit eu.
+					a.card__link(href="#") Read More <i class="fa fa-angle-right" aria-hidden="true"></i>
+
+			button.btn.btn__load Load More
+		.aside
+			.user
+				.user__avatar
+					img(src="/images/avatar/avatar.jpg" alt="User avatar")
+				.user__name Luise Faulkner
+				.user__text Ted fermentum sed felis ut eleifend. Integer laoreet massa sed leo rhoncus, non posuere eros varius.
+				.user__sing
+					img(src="/images/avatar/sing.jpg" alt=" User sing")
+			.aside-block.categories
+				.aside-block__title Categories
+				hr
+				ul.categories__list
+					li.categories__item
+						<i class="fa fa-angle-right" aria-hidden="true"></i>
+						a.categories__link(href="#") Travel
+					li.categories__item
+						<i class="fa fa-angle-right" aria-hidden="true"></i>
+						a.categories__link(href="#") Food
+					li.categories__item
+						<i class="fa fa-angle-right" aria-hidden="true"></i>
+						a.categories__link(href="#") Lifestyle
+					li.categories__item
+						<i class="fa fa-angle-right" aria-hidden="true"></i>
+						a.categories__link(href="#") Health & Fintness
+					li.categories__item
+						<i class="fa fa-angle-right" aria-hidden="true"></i>
+						a.categories__link(href="#") Minimalizam
+					li.categories__item
+						<i class="fa fa-angle-right" aria-hidden="true"></i>
+						a.categories__link(href="#") Recipes
+					li.categories__item
+						<i class="fa fa-angle-right" aria-hidden="true"></i>
+						a.categories__link(href="#") Review
+			.aside-block.popular
+				.aside-block__title Popular Posts
+					hr
+				ul.popular__list
+					li.popular__item
+						.popular__img
+							img(src="/images/popular/pop_post1.jpg" alt="Popular post 1")
+						a.popular__title(href="#") Sand Castle on the Beach
+						.popular__author by John Doe
+					li.popular__item
+						.popular__img
+							img(src="/images/popular/pop_post2.jpg" alt="Popular post 2")
+						a.popular__title(href="#") How To Visit Neuschwan Castle By Train
+						.popular__author by Adam Rose
+			.asided-block.following
+				.aside-block__title Follow
+				a.aside-block__link(href="#") @Luisgarica
+				p
+					<i class="fa fa-instagram" aria-hidden="true"></i>
+				hr
+				ul.following__list
+					li.following__item
+						a.following__link(href="#")
+							img(src="/images/follow/follow1.jpg" alt="Luis photo")
+					li.following__item
+						a.following__link(href="#")
+							img(src="/images/follow/follow2.jpg" alt="Luis photo")
+					li.following__item
+						a.following__link(href="#")
+							img(src="/images/follow/follow3.jpg" alt="Luis photo")
+					li.following__item
+						a.following__link(href="#")
+							img(src="/images/follow/follow4.jpg" alt="Luis photo")
+					li.following__item
+						a.following__link(href="#")
+							img(src="/images/follow/follow5.jpg" alt="Luis photo")
+					li.following__item
+						a.following__link(href="#")
+							img(src="/images/follow/follow6.jpg" alt="Luis photo")
