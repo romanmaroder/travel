@@ -1,0 +1,13 @@
+.btn {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  display: block;
+
+  &__search {
+	margin-left : auto;
+	.fa-search {
+	  color: #777777;
+	}
+  }
+}

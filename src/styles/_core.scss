@@ -10,13 +10,11 @@ body {
 .container {
   max-width : 100%;
   min-width : 320px;
-  padding    : 0 15px;
 }
 
 .wrap {
   min-width  : 320px;
   max-width  : 1440px;
-  padding    : 0 15px;
   margin     : 0 auto;
   box-sizing : border-box;
 }
@@ -32,4 +30,7 @@ body {
   clip-path   : inset(100%);
   clip        : rect(0, 0, 0, 0);
   overflow    : hidden;
+}
+.show {
+  display: block!important;
 }

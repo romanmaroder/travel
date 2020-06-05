@@ -1,0 +1,26 @@
+.form {
+
+  &__search {
+	display : flex;
+  }
+
+}
+
+.input {
+  background-color: #fff;
+  color: rgb(119, 119, 119);
+  line-height: 1.875;
+  text-align: left;
+  border:1px solid #FFECECEC;
+  //width : 480px;
+  //height : 60px;
+
+  &__search {
+	height : 16px;
+	width : 100%;
+	font-size : 14px;
+	padding-left : 10px;
+	display : none;
+  }
+}
+

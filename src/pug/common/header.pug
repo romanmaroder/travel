@@ -1,17 +1,18 @@
-header.header.container
-	a.header__burger(href="#")
-		img(src="/images/icon/burger.jpg" alt="burger")
-	ul.header__menu.menu
-		li.menu__item
-			a.menu__link(href="#") Home
-		li.menu__item
-			a.menu__link(href="#") About me
-		li.menu__item
-			a.menu__link(href="#") Post
-		li.menu__item
-			a.menu__link(href="#") Styles
-		li.menu__item
-			a.menu__link(href="#") Contact
-	.header__search
-		img(src="/images/icon/search.jpg" alt="search")
-	hr
+.container
+	header.header
+		a.header__burger(href="#")
+			<i class="fa fa-bars" aria-hidden="true"></i>
+		ul.header__menu.menu
+			li.menu__item
+				a.menu__link(href="#") Home
+			li.menu__item
+				a.menu__link(href="#") About me
+			li.menu__item
+				a.menu__link(href="#") Post
+			li.menu__item
+				a.menu__link(href="#") Styles
+			li.menu__item
+				a.menu__link(href="#") Contact
+		form.header__search.form.form__search(action="#")
+			input.input.input__search(type="text")
+			button.btn.btn__search <i class="fa fa-search" aria-hidden="true"></i>
