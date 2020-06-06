@@ -1,0 +1,20 @@
+.footer {
+  padding          : 50px 0 35px;
+  background-color : #F8F8F8;
+
+  &__wrap {
+	display               : grid;
+	grid-template-rows : repeat(auto-fit, minmax(20px, 1fr));
+  }
+  &__top {
+	display               : grid;
+	grid-template-columns : repeat(auto-fit, minmax(50%, 1fr));
+	align-items: center;
+  }
+  &__menu {
+	justify-items: start;
+  }
+  &__info {
+	justify-self: start;
+  }
+}

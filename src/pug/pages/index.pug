@@ -6,41 +6,39 @@ block content
 	section.blog
 		h2.visual-hidden Blog
 		p.blog__title Travel Blog
-		p.blog__tag.blog__tag-template Blog template
+		p.tag.tag-template Blog template
 	section.header-slider
 		.slider
 			.slide
 				.slider__content
-					p.blog__tag.blog__tag-lifestyle Lifestyle
+					p.tag.tag-lifestyle--slider Lifestyle
 					h1.slide__title Beyond The Land
 				img(src="/images/banner/banner.jpg" alt="Lifestyle")
 			.slide
 				.slider__content
-					p.blog__tag.blog__tag-lifestyle Lifestyle
+					p.tag.tag-lifestyle--slider Lifestyle
 					h1.slide__title Beyond The Land
 				img(src="/images/banner/banner.jpg" alt="Lifestyle")
 			.slide
 				.slider__content
-					p.blog__tag.blog__tag-lifestyle Lifestyle
+					p.tag.tag-lifestyle--slider Lifestyle
 					h1.slide__title Beyond The Land
 				img(src="/images/banner/banner.jpg" alt="Lifestyle")
 		.slider__dots
+	section.filter.wrap
+		h2.visual-hidden Filter block
+		.filter__wrap
+			a.filter__link(href="#") Most Recent
+			a.filter__link(href="#") Popular Post
+			a.filter__link(href="#") All Post <i class="fa fa-angle-down" aria-hidden="true"></i>
 	section.content.wrap
-		.conten__filter
-			ul.content__list
-				li
-					a.content__link(href="#") Most Recent
-				li
-					a.content__link(href="#") Popular Post
-			a.content__link(href="#") All Post <i class="fa fa-angle-down" aria-hidden="true"></i>
-		//hr
 		.main-block
 			h2.visual-hidden Content block
 			.card
 				.card__img
 					img(src="/images/posts/post1.jpg" alt="Post 1")
 				.card__content
-					p.blog__tag.blog__tag-template Lifestyle
+					p.tag.tag-card Lifestyle
 					h2.card__title End of the Ocean
 					p.card__text
 						| Ted fermentum sed felis ut eleifend. Integer
@@ -53,7 +51,7 @@ block content
 				.card__img
 					img(src="/images/posts/post2.jpg" alt="Post 2")
 				.card__content
-					p.blog__tag.blog__tag-template Travel
+					p.tag.tag-card Travel
 					h2.card__title Land Of Mysteries
 					p.card__text
 						| Ted fermentum sed felis ut eleifend. Integer laoreet massa sed leo rhoncus, non posuere eros varius.
@@ -66,7 +64,7 @@ block content
 				.card__img
 					img(src="/images/posts/post3.jpg" alt="Post 3")
 				.card__content
-					p.blog__tag.blog__tag-template Photography
+					p.tag.tag-card Photography
 					h2.card__title Life Advice Looking Through A Window
 					p.card__text
 						| Ted fermentum sed felis ut eleifend. Integer laoreet massa sed leo rhoncus, non posuere eros varius.
@@ -77,16 +75,15 @@ block content
 
 			button.btn.btn__load Load More
 		.aside
-			.user
+			.aside-block.user
 				.user__avatar
 					img(src="/images/avatar/avatar.jpg" alt="User avatar")
 				.user__name Luise Faulkner
 				.user__text Ted fermentum sed felis ut eleifend. Integer laoreet massa sed leo rhoncus, non posuere eros varius.
-				.user__sing
-					img(src="/images/avatar/sing.jpg" alt=" User sing")
+				.user__sign
+					img(src="/images/avatar/sign.jpg" alt=" User sign")
 			.aside-block.categories
 				.aside-block__title Categories
-				//hr
 				ul.categories__list
 					li.categories__item
 						<i class="fa fa-angle-right" aria-hidden="true"></i>
@@ -111,24 +108,24 @@ block content
 						a.categories__link(href="#") Review
 			.aside-block.popular
 				.aside-block__title Popular Posts
-					//hr
 				ul.popular__list
 					li.popular__item
 						.popular__img
 							img(src="/images/popular/pop_post1.jpg" alt="Popular post 1")
-						a.popular__title(href="#") Sand Castle on the Beach
-						.popular__author by John Doe
+						.popular__content
+							a.popular__title(href="#") Sand Castle on the Beach
+							.popular__author by John Doe
 					li.popular__item
 						.popular__img
 							img(src="/images/popular/pop_post2.jpg" alt="Popular post 2")
-						a.popular__title(href="#") How To Visit Neuschwan Castle By Train
-						.popular__author by Adam Rose
-			.asided-block.following
-				.aside-block__title Follow
-				a.aside-block__link(href="#") @Luisgarica
-				p
-					<i class="fa fa-instagram" aria-hidden="true"></i>
-				//hr
+						.popular__content
+							a.popular__title(href="#") How To Visit Neuschwan Castle By Train
+							.popular__author by Adam Rose
+			.aside-block.following
+				.aside-block__title.following__title Follow
+					a.following__link(href="#") @Luisgarica
+					span.following__icon
+						<i class="fa fa-instagram" aria-hidden="true"></i>
 				ul.following__list
 					li.following__item
 						a.following__link(href="#")

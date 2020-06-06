@@ -4,23 +4,30 @@
 	display : flex;
   }
 
+  &__footer {
+	justify-self : end;
+  }
 }
 
 .input {
-  background-color: #fff;
-  color: rgb(119, 119, 119);
-  line-height: 1.875;
-  text-align: left;
-  border:1px solid #FFECECEC;
-  //width : 480px;
-  //height : 60px;
+  background-color : #FFFFFF;
+  color            : rgb(119, 119, 119);
+  line-height      : 1.8;
+  text-align       : left;
+  border           : 1px solid #FFECECEC;
 
   &__search {
-	height : 16px;
-	width : 100%;
-	font-size : 14px;
+	height       : 16px;
+	width        : 100%;
+	font-size    : 14px;
 	padding-left : 10px;
-	display : none;
+	display      : none;
+  }
+  &__footer {
+	width : 410px;
+	border: 1px solid #ECECEC;
+	padding : 10px 0 10px 30px;
   }
 }
+
 

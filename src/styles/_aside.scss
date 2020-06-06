@@ -1,0 +1,147 @@
+.aside {
+  padding          : 50px;
+  background-color : #FAFAFA;
+  box-shadow       : 0 5px 27px 0 rgba(0, 0, 0, 0.08);
+  height           : min-content;
+
+  &-block {
+	border-radius    : 10px;
+	background-color : #FFFFFF;
+	box-shadow       : 0 5px 27px 0 rgba(0, 0, 0, 0.04);
+	padding          : 40px;
+	margin-bottom    : 40px;
+
+	&:last-child {
+	  margin-bottom : 0;
+	}
+
+	&__title {
+	  font-family    : 'Montserrat', sans-serif;
+	  font-weight    : 600;
+	  color          : #222222;
+	  text-transform : uppercase;
+	  line-height    : 1.875;
+	  border-bottom  : 1px solid #ECECEC;
+	  padding-bottom : 15px;
+	  margin-bottom  : 30px;
+	}
+  }
+}
+
+.user {
+  &__avatar {
+	border-radius    : 50%;
+	background-color : #DBDBDB;
+	width            : 115px;
+	height           : 115px;
+	overflow         : hidden;
+	margin           : 0 auto 30px;
+  }
+
+  &__name {
+	font-family    : 'Montserrat', sans-serif;
+	font-size      : 18px;
+	font-weight    : 600;
+	color          : #222222;
+	text-transform : uppercase;
+	text-align     : center;
+	line-height    : 2.133;
+	padding-bottom : 15px;
+  }
+
+  &__text {
+	color          : #777777;
+	letter-spacing : 0.5px;
+	line-height    : 30px;
+	padding-bottom : 20px;
+  }
+
+  &__sign {
+	max-width : 115px;
+	height    : auto;
+	overflow  : hidden;
+	margin    : 0 auto;
+  }
+}
+
+.categories {
+  &__item {
+	margin-bottom : 27px;
+
+	&:last-child {
+	  margin-bottom : 0;
+	}
+  }
+
+  &__link {
+	font-size    : 17px;
+	color        : #777777;
+	line-height  : 1;
+	padding-left : 13px;
+  }
+
+}
+
+.popular {
+  &__item {
+	border-bottom  : 1px dashed #ECECEC;
+	display        : flex;
+	align-items    : center;
+	padding-bottom : 30px;
+	margin-bottom  : 30px;
+
+	&:last-child {
+	  border-bottom : none;
+	  margin-bottom : 0;
+	}
+  }
+
+  &__content {
+	margin-left : 20px;
+  }
+
+  &__img {
+	border-radius    : 50%;
+	background-color : #BEBEBE;
+	min-width        : 75px;
+	height           : 75px;
+	overflow         : hidden;
+  }
+
+  &__title {
+	font-family : 'Montserrat', sans-serif;
+	font-size   : 17px;
+	color       : #222222;
+	line-height : 1.529;
+	text-align  : left;
+  }
+
+  &__author {
+	font-size   : 14px;
+	color       : #BABABA;
+	font-style  : italic;
+	line-height : 1.571;
+	text-align  : left;
+  }
+}
+
+.following {
+  &__title {
+	display               : grid;
+	grid-template-columns : repeat(3, 1fr);
+  }
+
+  &__link {
+	color : #222222;
+  }
+
+  &__icon {
+	justify-self : end;
+  }
+
+  &__list {
+	display               : grid;
+	grid-template-columns : repeat(auto-fit, minmax(50px, 140px));
+	grid-gap              : 10px;
+  }
+}

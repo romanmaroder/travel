@@ -1,13 +1,38 @@
 .btn {
-  border: none;
-  background-color: transparent;
-  cursor: pointer;
-  display: block;
+  border           : none;
+  background-color : transparent;
+  cursor           : pointer;
+  display          : block;
 
   &__search {
 	margin-left : auto;
+
 	.fa-search {
-	  color: #777777;
+	  color : #777777;
 	}
   }
+
+  &__load {
+	font-family    : 'Montserrat', sans-serif;
+	font-size      : 15px;
+	font-weight : 600;
+	color          : #222222;
+	letter-spacing: 0.5px;
+	text-transform : uppercase;
+	line-height    : 2.133;
+	border         : 2px solid #E0E0E0;
+	border-radius: 40px;
+	width          : 236px;
+	height         : 60px;
+  }
+
+  &__form {
+	display: inline-block;
+	padding: 15px;
+	background-color: #d3c4a6;
+	border: 1px solid #ECECEC;
+  }
+}
+.fa-envelope-o {
+  color: #fff;
 }

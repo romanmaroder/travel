@@ -1,18 +1,24 @@
 .menu {
-  font-size      : 18px;
-  color          : rgb(34, 34, 34);
-  text-transform : uppercase;
-  line-height    : 1;
+  font-size             : 18px;
+  color                 : rgb(34, 34, 34);
+  text-transform        : uppercase;
+  line-height           : 1;
+  display               : grid;
+  grid-template-columns : repeat(auto-fit,minmax(50px,1fr));
+  justify-items         : center;
+  width                 : 100%;
+
   &__item {
 	display : inline;
   }
 
   &__link {
-    padding  : 0 45px;
-    color : #222222;
-    &:hover {
-      text-shadow: 0.25px 0.1px 0px #222, -0.25px -0.1px 0px #222;
-    }
+	color       : #222222;
+	white-space : nowrap;
+
+	&:hover {
+	  text-shadow : 0.25px 0.1px 0px #222222, -0.25px -0.1px 0px #222222;
+	}
   }
 }
 

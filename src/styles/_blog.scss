@@ -3,29 +3,13 @@
   color          : rgb(34, 34, 34);
   text-transform : uppercase;
   text-align     : center;
-  padding : 50px 0;
-
-  &__tag {
-	display       : block;
-	border-top    : 2px solid;
-	border-bottom : 2px solid;
-  }
+  padding        : 50px 0;
 
   &__title {
 	font-weight : bold;
 	font-size   : 36px;
 	line-height : 1.444;
-	margin :0 0  26px;
-  }
-
-  &__tag-template {
-	font-size    : 12.5px;
-	font-weight : 600;
-	line-height  : 3.467;
-	color        : #222222;
-	border-color : #222222;
-	width : 115px;
-	margin : 0 auto;
+	margin      : 0 0 26px;
   }
 }
 
