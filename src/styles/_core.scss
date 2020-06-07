@@ -5,6 +5,7 @@ html {
 
 body {
   font-family : 'Playfair Display', serif;
+  position: relative;
 }
 
 .container {
@@ -14,10 +15,19 @@ body {
 
 .wrap {
   min-width  : 320px;
-  max-width  : 1440px;
+  max-width  : 100%;
   margin     : 0 auto;
   padding : 0 15px;
   box-sizing : border-box;
+  @media screen and (min-width:992px) {
+    max-width : 992px;
+  }
+  @media screen and (min-width:1440px) {
+    max-width : 1200px;
+  }
+  @media screen and (min-width:1920px) {
+    max-width : 1440px;
+  }
 }
 
 .visual-hidden {
@@ -34,4 +44,19 @@ body {
 }
 .show {
   display: block!important;
+}
+
+.show-menu {
+  display: grid!important;
+  background-color: #fff;
+  z-index: 1;
+  width: 100vw;
+  height: 100%;
+  left : 0;
+}
+.active {
+  position: absolute;
+  z-index: 2;
+  top: 20px;
+  left: 15px;
 }

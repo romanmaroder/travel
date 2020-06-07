@@ -3,11 +3,11 @@ block variables
 	-var title = "Travel"
 
 block content
-	section.blog
+	section.blog#blog
 		h2.visual-hidden Blog
 		p.blog__title Travel Blog
 		p.tag.tag-template Blog template
-	section.header-slider
+	section.header-slider#slider
 		.slider
 			.slide
 				.slider__content
@@ -16,22 +16,22 @@ block content
 				img(src="/images/banner/banner.jpg" alt="Lifestyle")
 			.slide
 				.slider__content
-					p.tag.tag-lifestyle--slider Lifestyle
-					h1.slide__title Beyond The Land
-				img(src="/images/banner/banner.jpg" alt="Lifestyle")
+					p.tag.tag-lifestyle--slider Travel
+					h1.slide__title Land Of Mysteries
+				img(src="/images/banner/banner1.jpg" alt="Travel")
 			.slide
 				.slider__content
-					p.tag.tag-lifestyle--slider Lifestyle
-					h1.slide__title Beyond The Land
-				img(src="/images/banner/banner.jpg" alt="Lifestyle")
+					p.tag.tag-lifestyle--slider Photography
+					h1.slide__title Looking
+				img(src="/images/banner/banner2.jpg" alt="Photography")
 		.slider__dots
-	section.filter.wrap
+	section.filter.wrap#filter
 		h2.visual-hidden Filter block
 		.filter__wrap
 			a.filter__link(href="#") Most Recent
 			a.filter__link(href="#") Popular Post
 			a.filter__link(href="#") All Post <i class="fa fa-angle-down" aria-hidden="true"></i>
-	section.content.wrap
+	section.content.wrap#content
 		.main-block
 			h2.visual-hidden Content block
 			.card

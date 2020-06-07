@@ -1,7 +1,7 @@
 footer.footer
 	.footer__wrap.wrap
 		.footer__top
-			ul.footer__menu.menu
+			ul.menu.footer__menu
 				li.menu__item
 					a.menu__link(href="#") Home
 				li.menu__item
@@ -16,13 +16,11 @@ footer.footer
 				input.input.input__footer(type="text" placeholder="Your Email...")
 				button.btn.btn__form <i class="fa fa-envelope-o" aria-hidden="true"></i>
 			.footer__info
-				p
-					a.footer-info__email(href="mailto:travel@gmail.com") travel@gmail.com
-				p
-					a.footer-info__phone(href="tel:(123)456789") (123) 456 789
-		.footer-bottom
-			span.footer-copy &#169; Copyrights 2017. Travelblog By VictorThemes
-			span.footer-social
+				a.footer__info-email(href="mailto:travel@gmail.com") travel@gmail.com
+				a.footer__info-phone(href="tel:(123)456789") (123) 456 789
+		.footer__bottom
+			span.footer__copy &#169; Copyrights 2017. Travelblog By VictorThemes
+			span.footer__social
 				a(href="#").facebook
 					<i class="fa fa-facebook" aria-hidden="true"></i>
 				a(href="#").twitter
