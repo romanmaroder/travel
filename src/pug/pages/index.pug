@@ -3,40 +3,40 @@ block variables
 	-var title = "Travel"
 
 block content
-	section.blog
+	section.blog#blog
 		h2.visual-hidden Blog
 		p.blog__title Travel Blog
 		p.tag.tag-template Blog template
-	section.header-slider
+	section.header-slider#slider
 		.slider
 			.slide
 				.slider__content
 					p.tag.tag-lifestyle--slider Lifestyle
 					h1.slide__title Beyond The Land
-				img(src="/images/banner/banner.jpg" alt="Lifestyle")
+				img(src="images/banner/banner.jpg" alt="Lifestyle")
 			.slide
 				.slider__content
-					p.tag.tag-lifestyle--slider Lifestyle
-					h1.slide__title Beyond The Land
-				img(src="/images/banner/banner.jpg" alt="Lifestyle")
+					p.tag.tag-lifestyle--slider Travel
+					h1.slide__title Land Of Mysteries
+				img(src="images/banner/banner1.jpg" alt="Travel")
 			.slide
 				.slider__content
-					p.tag.tag-lifestyle--slider Lifestyle
-					h1.slide__title Beyond The Land
-				img(src="/images/banner/banner.jpg" alt="Lifestyle")
+					p.tag.tag-lifestyle--slider Photography
+					h1.slide__title Looking
+				img(src="images/banner/banner2.jpg" alt="Photography")
 		.slider__dots
-	section.filter.wrap
+	section.filter.wrap#filter
 		h2.visual-hidden Filter block
 		.filter__wrap
 			a.filter__link(href="#") Most Recent
 			a.filter__link(href="#") Popular Post
 			a.filter__link(href="#") All Post <i class="fa fa-angle-down" aria-hidden="true"></i>
-	section.content.wrap
+	section.content.wrap#content
 		.main-block
 			h2.visual-hidden Content block
 			.card
 				.card__img
-					img(src="/images/posts/post1.jpg" alt="Post 1")
+					img(src="images/posts/post1.jpg" alt="Post 1")
 				.card__content
 					p.tag.tag-card Lifestyle
 					h2.card__title End of the Ocean
@@ -49,7 +49,7 @@ block content
 
 			.card
 				.card__img
-					img(src="/images/posts/post2.jpg" alt="Post 2")
+					img(src="images/posts/post2.jpg" alt="Post 2")
 				.card__content
 					p.tag.tag-card Travel
 					h2.card__title Land Of Mysteries
@@ -62,7 +62,7 @@ block content
 
 			.card
 				.card__img
-					img(src="/images/posts/post3.jpg" alt="Post 3")
+					img(src="images/posts/post3.jpg" alt="Post 3")
 				.card__content
 					p.tag.tag-card Photography
 					h2.card__title Life Advice Looking Through A Window
@@ -77,11 +77,11 @@ block content
 		.aside
 			.aside-block.user
 				.user__avatar
-					img(src="/images/avatar/avatar.jpg" alt="User avatar")
+					img(src="images/avatar/avatar.jpg" alt="User avatar")
 				.user__name Luise Faulkner
 				.user__text Ted fermentum sed felis ut eleifend. Integer laoreet massa sed leo rhoncus, non posuere eros varius.
 				.user__sign
-					img(src="/images/avatar/sign.jpg" alt=" User sign")
+					img(src="images/avatar/sign.jpg" alt=" User sign")
 			.aside-block.categories
 				.aside-block__title Categories
 				ul.categories__list
@@ -111,13 +111,13 @@ block content
 				ul.popular__list
 					li.popular__item
 						.popular__img
-							img(src="/images/popular/pop_post1.jpg" alt="Popular post 1")
+							img(src="images/popular/pop_post1.jpg" alt="Popular post 1")
 						.popular__content
 							a.popular__title(href="#") Sand Castle on the Beach
 							.popular__author by John Doe
 					li.popular__item
 						.popular__img
-							img(src="/images/popular/pop_post2.jpg" alt="Popular post 2")
+							img(src="images/popular/pop_post2.jpg" alt="Popular post 2")
 						.popular__content
 							a.popular__title(href="#") How To Visit Neuschwan Castle By Train
 							.popular__author by Adam Rose
@@ -129,19 +129,19 @@ block content
 				ul.following__list
 					li.following__item
 						a.following__link(href="#")
-							img(src="/images/follow/follow1.jpg" alt="Luis photo")
+							img(src="images/follow/follow1.jpg" alt="Luis photo")
 					li.following__item
 						a.following__link(href="#")
-							img(src="/images/follow/follow2.jpg" alt="Luis photo")
+							img(src="images/follow/follow2.jpg" alt="Luis photo")
 					li.following__item
 						a.following__link(href="#")
-							img(src="/images/follow/follow3.jpg" alt="Luis photo")
+							img(src="images/follow/follow3.jpg" alt="Luis photo")
 					li.following__item
 						a.following__link(href="#")
-							img(src="/images/follow/follow4.jpg" alt="Luis photo")
+							img(src="images/follow/follow4.jpg" alt="Luis photo")
 					li.following__item
 						a.following__link(href="#")
-							img(src="/images/follow/follow5.jpg" alt="Luis photo")
+							img(src="images/follow/follow5.jpg" alt="Luis photo")
 					li.following__item
 						a.following__link(href="#")
-							img(src="/images/follow/follow6.jpg" alt="Luis photo")
+							img(src="images/follow/follow6.jpg" alt="Luis photo")

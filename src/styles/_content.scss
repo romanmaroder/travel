@@ -1,6 +1,13 @@
 .content {
   display: grid;
-  grid-template-columns: minmax(320px, 850px) minmax(320px,470px);
+  grid-template-columns: auto;
   grid-column-gap: 70px;
-  padding-bottom : 160px;
+  grid-row-gap: 50px;
+  padding-bottom : 50px;
+  @media screen and (min-width : 768px) {
+    grid-template-columns: minmax(320px, 850px) minmax(320px,470px);
+  }
+  @media screen and (min-width : 1440px) {
+    padding-bottom : 160px;
+  }
 }
